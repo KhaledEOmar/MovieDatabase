@@ -2,13 +2,13 @@ import media
 import fresh_tomatoes
 #creating multiple movie objects
 toy_story = media.Movie("Toy Story",
-                        "A boy and his toys",
+                        "A boys toys come to life",
                         "https://upload.wikimedia.org/wikipedia/en/1/13/Toy_Story.jpg", # NOQA
                         "https://www.youtube.com/watch?v=KYz2wyBy3kc",
                         81)
 
 avatar = media.Movie("Avatar",
-                     "A marine does things",
+                     "A marine goes to an alien planet",
                      "https://upload.wikimedia.org/wikipedia/en/b/b0/Avatar-Teaser-Poster.jpg", # NOQA
                      "https://www.youtube.com/watch?v=5PSNL1qE6VY",
                      162)
