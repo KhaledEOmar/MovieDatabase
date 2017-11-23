@@ -1,6 +1,9 @@
 import webbrowser
-
+# Video class to created video objects
 class Video:
+    # Video takes in the video title,
+    # description, poster URL, and youtube
+    # trailer URL
     def __init__(self,video_title,
                  video_description,
                  video_poster,
@@ -9,13 +12,9 @@ class Video:
         self.description = video_description
         self.poster = video_poster
         self.trailerURL = video_trailer_url
-    def getTitle(self):
-        return self.title
-    def getPoster(self):
-        return self.poster
-    def getTrailerURL(self):
-        return self.trailerURL
-    
+
+# Movie class inherits from Video class
+# and adds a runtime variable
 class Movie(Video):
     def __init__(self, movie_title,
                  movie_description,
@@ -28,10 +27,9 @@ class Movie(Video):
                        movie_trailer_url)
         self.runtime = movie_runtime
 
-    def getMovieDetails(self):
-        print(self.getTitle + " " + self.runtime)
         
-        
+# Show class inherits from Video class
+# and adds a number of seasons variable    
 class Show(Video):
     def __init__(self, show_title,
                  show_description,
@@ -44,5 +42,3 @@ class Show(Video):
                        show_trailer_url)
         self.seasons = show_seasons
 
-    def getMovieDetails(self):
-        print(self.getTitle + " " + self.runtime)
