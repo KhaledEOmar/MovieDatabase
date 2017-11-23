@@ -9,5 +9,13 @@ $ git clone https://github.com/KhaledEOmar/MovieDatabase.git
 # Starting the movie website
 Run entertainment_center.py to open the trailer website. 
 
-
-
+# Adding a new movie
+In the entertainment_center.py file, add the following code:
+```
+OBJECT_NAME = media.Movie("MOVIE TITLE",
+                           "MOVIE DESCRIPTION",
+                           "URL TO MOVIE POSTER", 
+                           "URL TO YOUTUBE MOVIE TRAILER",
+                           MINUTE LENGTH MOVIE)
+```
+Then add the new created object to the movies list
