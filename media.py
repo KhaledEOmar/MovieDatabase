@@ -1,14 +1,16 @@
 import webbrowser
 # Video class to created video objects
+
+
 class Video:
-    """    
+    """
     Attributes:
         video_title (str): Name of the video (e.g. Toy Story)
-        video_discripton (str): General overview of video 
+        video_discripton (str): General overview of video
         video_poster (str): url to image of video poster
-        video_trailer_url (str): url to youtube trailer 
+        video_trailer_url (str): url to youtube trailer
     """
-    def __init__(self,video_title,
+    def __init__(self, video_title,
                  video_description,
                  video_poster,
                  video_trailer_url):
@@ -19,6 +21,8 @@ class Video:
 
 # Movie class inherits from Video class
 # and adds a runtime variable
+
+
 class Movie(Video):
     """
     Inherits from video
@@ -30,15 +34,15 @@ class Movie(Video):
                  movie_poster,
                  movie_trailer_url,
                  movie_runtime):
-        Video.__init__(self,movie_title,
+        Video.__init__(self, movie_title,
                        movie_description,
                        movie_poster,
                        movie_trailer_url)
         self.runtime = movie_runtime
 
-        
+
 # Show class inherits from Video class
-# and adds a number of seasons variable    
+# and adds a number of seasons variable
 class Show(Video):
     """
     Inherits from video
@@ -55,4 +59,3 @@ class Show(Video):
                        show_poster,
                        show_trailer_url)
         self.seasons = show_seasons
-
